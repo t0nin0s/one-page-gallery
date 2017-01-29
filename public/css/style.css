@@ -1,0 +1,107 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 30px auto;
+  font-family: sans-serif;
+  width: 90%;
+}
+
+.content{
+  overflow: hidden;
+}
+
+.thumbnail{
+  float: left;
+  width: 50%;
+  margin-bottom: 2%;
+}
+
+.thumbnail > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10% 20%;
+  border: 1px solid #ebe8eb;
+  cursor: pointer;
+  background-color: #fcfcff;
+
+  border-radius: 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+@media (min-width: 768px) {
+  .thumbnail{
+    width: 25%;
+  }
+
+  .thumbnail > img {
+    padding: 10% 15%;
+  }
+}
+
+@media (min-width: 992px) {
+  .thumbnail{
+    width: 20%;
+  }
+
+  .thumbnail > img {
+    padding: 10% 10%;
+  }
+}
+
+/* Modal */
+
+/* Modal background */
+.modal-background {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+/* Modal Image */
+.modal-img {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+}
+
+/* Modal Caption */
+.modal-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* TModal Close Button */
+.modal-close-button {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
