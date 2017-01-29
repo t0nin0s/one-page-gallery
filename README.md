@@ -11,7 +11,7 @@ Make sure you have Node.js installed.
 
   1. `git clone https://github.com/t0nin0s/one-page-gallery`
   2. `npm install`
-  2. `cd one-page-gallery`
+  3. `cd one-page-gallery`
 
   ### `npm start`
 
